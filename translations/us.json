@@ -1,0 +1,35 @@
+{
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_team": "Team",
+    "nav_contact": "Contact",
+
+    "carousel_title_entertainment" :"ENTERTAINMENT",
+    "carousel_text_entertainment" :"Based on AR technology game with blusters",
+    "carousel_title_health" :"HEALTH",
+    "carousel_text_health" :"Breakthrough silent exercise machine with trainer in your pocket",
+    "carousel_title_it" :"IT",
+    "carousel_text_it" :"Software support of all areas",
+
+    "description_title":"About us",
+    "description_first":"Introducing VonJon, a leading-edge technology company with a passion for software development, entrepreneurship, and progress. Our primary focus lies in mobile application development and embedded software for training equipment. We utilize advanced technologies and robust coding methodologies to create superior applications and interactive software solutions that redefine user experiences and enhance fitness regimes",
+    "description_second":"Our dedication doesn't end with offering services. We're deeply committed to nurturing innovation and fostering startups. We house an incubation initiative that cultivates promising startup ideas, offering them necessary resources, mentorship, and technical support to turn them into successful ventures.",
+
+    "product_manager_description":"Mastering the art of balance, a product manager excels in orchestrating various aspects of a project.",
+    "software_developer_description":"Passionate about innovative technologies, a programmer constantly delves into the depth of codes and algorithms.",
+    "designer_description":"In the dynamic world of design, a designer brings ideas to life with their creative prowess.",
+
+    "contact_us_title" : "Contact Us",
+    "contact_us_text" : "Post your message below. We will get back to you ASAP",
+    "contact_us_message" : "Message",
+    "contact_us_name" : "Your Name:",
+    "contact_us_email" : "Your Email:",
+    "contact_us_post" : "Post",
+    
+    "modal_title" : "Mail sender",
+    "modal_message" : "Your message was successfully sent!",
+    "modal_button" : "Submit"
+
+    
+
+}

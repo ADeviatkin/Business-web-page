@@ -1,0 +1,62 @@
+.header {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.test {
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.test2 {
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    background-color: #ffffff;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.person {
+    opacity: 0.9;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.btn2{
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+    border: none !important;
+    object-fit: cover;
+}
+.dropdown-menu {
+    min-width: 0px !important;
+}
+#cb-cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; border-radius: 0; display: none; } 
+
+@media (min-width:992px) and (min-height:500px){
+    .test{
+        height: 100vh;
+        object-fit: cover;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    } 
+}

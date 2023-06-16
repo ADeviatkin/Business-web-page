@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VonJon company page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VonJon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a id="nav-home" class="nav-link" aria-current="page" href="#home"></a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-about" class="nav-link" href="#about"></a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-team" class="nav-link" href="#team"></a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-contact" class="nav-link" href="#contact"></a>
+          </li>
+        </ul>
+        <div class="dropdown " aria-expanded="false">
+          <button type="button" id="dropdownButton" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+            <span class="flag-icon flag-icon-us"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#us" data-lang="us"><span onclick="changeLanguage(event, 'us')"
+                  class="flag-icon flag-icon-us"></span></a></li>
+            <li><a class="dropdown-item" href="#pl" data-lang="pl"><span onclick="changeLanguage(event, 'pl')"
+                  class="flag-icon flag-icon-pl"></span></a></li>
+          </ul>
+        </div>
+
+      </div>
+  </nav>
+
+  <div id="home" class="carousel slide header" data-bs-ride="carousel">
+    <div class="carousel-inner ">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="img/nerf.png" class="header" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 id="carouseltitleentertainment"></h5>
+          <p id="carouseltextentertainment"></p>
+        </div>
+
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/gym.png" class="header" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 id="carousel-title-health"></h5>
+          <p id="carousel-text-health"></p>
+        </div>
+
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/code.png" class="header" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 id="carousel-title-it"></h5>
+          <p id="carousel-text-it"></p>
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+
+  <div id="about" class="container text-center test">
+    <div class="row align-items-center test">
+      <div class="col-12 col-lg-6">
+        <h1 id="description-title"></h1>
+        <p id="description-first"></p>
+        <br>
+        <p id="description-second"></p>
+        <br>
+      </div>
+      <div class="col-12 col-lg-6 d-flex justify-content-center">
+        <img src="img/some_developer.jpg" class="img-fluid" style="max-width: 50%; height: 50%;">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="team" class="carousel slide carousel-dark text-center test d-flex justify-content-center align-items-center"
+    data-mdb-ride="carousel" style="background-color: #eaeaea">
+    <!-- Controls -->
+    <div class="d-flex justify-content-center mb-4">
+      <button class="carousel-control-prev" type="button" data-bs-target="#team" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#team" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <!-- Inner -->
+    <div class="carousel-inner py-4">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Product Manager</p>
+              <p class="text-muted">
+                <i id="product-manager-description1" class="fas fa-quote-left pe-2"></i>
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              </ul>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Product Manager</p>
+              <p class="text-muted">
+                <i id="product-manager-description2" class="fas fa-quote-left pe-2"></i>
+              </p>
+              <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i class="fas fa-star-half-alt fa-sm"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Product Manager</p>
+              <p class="text-muted">
+                <i id="product-manager-description3" class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Software Developer</p>
+              <p class="text-muted">
+                <i id="software-developer-description1" class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Software Developer</p>
+              <p class="text-muted">
+                <i id="software-developer-description2" class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Software Developer</p>
+              <p class="text-muted">
+                <i id="software-developer-description3" class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Designer</p>
+              <p class="text-muted">
+                <i id="designer-description1" class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Designer</p>
+              <p id="designer-description2" class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <img class="rounded-circle shadow-1-strong mb-4" src="img/programmer_vector.png" alt="avatar"
+                style="width: 150px;" />
+              <h5 class="mb-3">Adam Nowak</h5>
+              <p>Designer</p>
+              <p id="designer-description3" class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+  </div>
+  <!-- Carousel wrapper -->
+
+
+
+
+  <div id="contact" class="m-1 test">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+      <form id="contact_form" name="contact_form" method="post">
+        <div class="container">
+          <h1 id="contact-us-title" class="text-center"></h1>
+          <div id="contact-us-text" class="fs-6 fw-light mb-2 text-center"></div>
+          <br><br>
+          <div class="mb-3">
+            <label id="contact-us-message" for="message"></label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+          <div class="mb-3 row g-3">
+            <div class="col-12 col-sm-6">
+              <label id="contact-us-name"></label>
+              <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+            </div>
+            <div class="col-12 col-sm-6">
+              <label id="contact-us-email" for="email_addr"></label>
+              <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="d-grid">
+            <button id="contact-us-post" type="submit" class="btn btn-success"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #1f2023">
+    <div class="container">
+      <section class="text-center p-1">
+        <a href="https://facebook.com" class="text-white me-4">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://instagram.com" class="text-white me-4">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://twitter.com" class="text-white me-4">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://google.com" class="text-white me-4">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="https://linkedin.com" class="text-white me-4">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="">Github</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- Cookie Banner -->
+  <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+    🍪 This website uses cookies to ensure you get the best experience on our website.
+    <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
+    <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+      I Got It
+    </button>
+  </div>
+  <!-- End of Cookie Banner -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myAdvert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 id="modal-message-title" class="modal-title fs-5"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modal-message-message" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            <div id="modal-message-button" class="modal-body">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#contact_form').on('submit', function (event) {
+        event.preventDefault();
+        $.ajax({
+          url: "sendEmail.php",
+          type: "POST",
+          data: $(this).serialize(),
+          success: function (data) {
+            $('#response').html(data);
+            var modal1 = new bootstrap.Modal(document.getElementById('myAdvert'));
+            modal1.show()
+          },
+          error: function () {
+            $('#response').html('Error sending message.');
+          }
+        });
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+    "nav_home": "Strona główna",
+    "nav_about": "O nas",
+    "nav_team": "Zespół",
+    "nav_contact": "Kontakt",
+    
+    "carousel_title_entertainment" :"ROZRYWKA",
+    "carousel_text_entertainment" :"Oparta na technologii AR gra z wyrzutniami",
+    "carousel_title_health" :"ZDROWIE",
+    "carousel_text_health" :"Przełomowa cicha maszyna do ćwiczeń z trenerem w kieszeni",
+    "carousel_title_it" :"IT",
+    "carousel_text_it" :"Wsparcie oprogramowania dla wszystkich obszarów",
+
+    "description_title":"O nas",
+    "description_first":"Przedstawiamy VonJon, wiodącą firmę technologiczną z pasją do tworzenia oprogramowania, przedsiębiorczości i postępu. Naszym głównym celem jest tworzenie aplikacji mobilnych i oprogramowania wbudowanego dla sprzętu treningowego. Wykorzystujemy zaawansowane technologie i niezawodne metodologie kodowania, aby tworzyć doskonałe aplikacje i interaktywne rozwiązania programowe, które na nowo definiują doświadczenia użytkowników i poprawiają reżimy fitness",
+    "description_second":"Nasze zaangażowanie nie kończy się na oferowaniu usług. Jesteśmy głęboko zaangażowani we wspieranie innowacji i wspieranie start_upów. Prowadzimy inicjatywę inkubacyjną, która kultywuje obiecujące pomysły na start_upy, oferując im niezbędne zasoby, mentoring i wsparcie techniczne, aby przekształcić je w udane przedsięwzięcia.",
+
+    "product_manager_description":"Opanowując sztukę równowagi, menedżer produktu przoduje w organizowaniu różnych aspektów projektu.",
+    "software_developer_description":"Pasjonat innowacyjnych technologii, programista nieustannie zgłębia tajniki kodów i algorytmów.",
+    "designer_description":"W dynamicznym świecie projektowania projektant ożywia pomysły dzięki swojej kreatywności.",
+
+    "contact_us_title" : "Skontaktuj się z nami",
+    "contact_us_text" : "Napisz swoją wiadomość poniżej. Skontaktujemy się z Tobą JAK NAJSZYBCIEJ",
+    "contact_us_message" : "Wiadomość",
+    "contact_us_name" : "Twoje imię:",
+    "contact_us_email" : "Twój e-mail:",
+    "contact_us_post" : "Wyślij",
+
+    "modal_title" : "Nadawca poczty",
+    "modal_message" : "Twoja wiadomość została pomyślnie wysłana!",
+    "modal_button" : "Zamknąć"
+}
